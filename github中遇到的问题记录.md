@@ -2,7 +2,7 @@
 ### 首先说一下最常用、最初遇到的命令 <br />
 **最开始要说的是，GitHub分为三个部分：工作区，暂存区，远程仓库**  
 <br />
-
+![](https://github.com/TRY0929/try.github.io-/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/images/git%E5%88%86%E5%8C%BA.png)
 <br />
 *所有带有git前缀的都是git的指令 不带的是系统的指令* <br />
 #### 帮助指令
