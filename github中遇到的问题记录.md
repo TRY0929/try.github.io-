@@ -5,6 +5,8 @@
 
 ![](https://github.com/TRY0929/try.github.io-/blob/master/images/git%E5%88%86%E5%8C%BA.png)
 
+![](https://github.com/TRY0929/try.github.io-/blob/master/images/git%E9%80%9F%E6%9F%A5%E8%A1%A8.jpg)
+
 <br />
 
 *所有带有git前缀的都是git的指令 不带的是系统的指令* 
