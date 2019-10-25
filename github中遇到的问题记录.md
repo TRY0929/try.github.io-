@@ -2,7 +2,9 @@
 ### 首先说一下最常用、最初遇到的命令 <br />
 **最开始要说的是，GitHub分为三个部分：工作区，暂存区，远程仓库**  
 <br />
-![](https://github.com/TRY0929/try.github.io-/blob/master/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/images/git%E5%88%86%E5%8C%BA.png)
+
+![](https://github.com/TRY0929/try.github.io-/blob/master/images/git%E5%88%86%E5%8C%BA.png)
+
 <br />
 *所有带有git前缀的都是git的指令 不带的是系统的指令* <br />
 #### 帮助指令
@@ -43,3 +45,30 @@
 + **cd 路径** （CD等盘前要加/）进入某个路径
 + **vi 文件** 创建文件
 + **cd ..** 退回上一级
+
+------
+
+遇到一些奇奇怪怪的问题：
+
+```
+编辑器会显示类似下面的文本信息（本例选用 Vim 的屏显方式展示）：
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   README
+#       modified:   benchmarks.rb 
+
+```
+**解决方法**：
+
+1. 按键盘字母 i 进入insert模式
+
+2. 修改最上面那行黄色合并信息,可以不修改
+
+3. 按键盘左上角"Esc"
+
+4. 输入":wq",注意是冒号+wq,按回车键即可
