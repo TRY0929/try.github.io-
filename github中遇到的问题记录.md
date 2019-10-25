@@ -6,22 +6,31 @@
 ![](https://github.com/TRY0929/try.github.io-/blob/master/images/git%E5%88%86%E5%8C%BA.png)
 
 <br />
-*所有带有git前缀的都是git的指令 不带的是系统的指令* <br />
+
+*所有带有git前缀的都是git的指令 不带的是系统的指令* 
+
+<br />
+
 #### 帮助指令
+
 + **git --help** 可得到帮助信息
 
 -----
 #### 用户信息
+
 + **git config --global user.name "xxx"** 设置当前用户名
 + **git config --global user.email "xxx@xxx"** 设置当前邮箱
 + **git config -l/list** 这是查看自己的信息
 
 -----
+
 #### 初始化仓库
+
 + **git init**
 
 -----
 #### 远程仓库
+
 如果是git clone得到的仓库，远程名称默认为origin
 
 + **git remote add 仓库名 远程地址** 添加远程仓库
@@ -32,6 +41,7 @@
 
 -----
 #### 操作指令
+
 + **git status** 查看当前状态，如有没有修改，有没有暂存区没push的等等
 + **git add 文件/文件夹名** 将有变化（新的文件）上传到暂存区
 + **git commit -m '描述（显示在GitHub文件后面的描述）'** 确认当前操作
@@ -42,6 +52,7 @@
 -----
 
 #### 一些系统的复制指令补充
+
 + **cd 路径** （CD等盘前要加/）进入某个路径
 + **vi 文件** 创建文件
 + **cd ..** 退回上一级
