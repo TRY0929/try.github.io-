@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1572361704 source:c:\users\arashi\desktop\bst\main.cpp
+	<iostream>
+	"implement.h"
+
+1572365699 source:c:\users\arashi\desktop\bst\definition.h
+
+1572365823 c:\users\arashi\desktop\bst\implement.h
+	<iostream>
+	<queue>
+	"definition.h"
+
+1572365699 c:\users\arashi\desktop\bst\definition.h
+
+1572365246 source:c:\users\arashi\desktop\bst\implement.h
+	<iostream>
+	<queue>
+	"definition.h"
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1572368253 source:c:\users\arashi\desktop\heap\definition.h
+
+1514140574 source:c:\users\arashi\desktop\heap\main.cpp
+	<iostream>
+
