@@ -1,0 +1,238 @@
+.grid {
+	height: 480px;
+}
+.grid-col1 {
+	width: 190px;
+	height: 100%;
+	background-color: #6E6568;
+	position: relative;
+}
+.grid-col1 ul {
+	padding: 10px 0;
+}
+.grid-col1 ul li {
+	padding-left: 12px;
+	line-height: 28px;
+	font-size: 14px; /*这是给/的*/
+	color: #fff;
+}
+.grid-col1 li a {
+	color: #fff; /*给链接文字的*/
+	margin: 0 3px; 
+}
+.grid-col1 li a:hover {
+	color: #f10215;
+	margin: 0 3px;
+}
+.grid-col1 ul li:hover {
+	background-color: #9c9698;
+}
+.ad {
+	position: absolute;
+	left: -250px;
+	top: 0;
+}
+.ad-r {
+	position: absolute;
+	background: url(../images/ad-r.jpg);
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	height: 480px;
+	/*display: none;*/
+	width: 0;
+	transition: width 0.6s;
+}
+.ad a:hover .ad-r {
+	width: 990px;
+	/*display: block;*/
+}
+.grid-col2 {
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+}
+.grid-col2-b div {
+	float: left;
+	margin-top: 10px;
+}
+.grid-col2-b div:last-child {
+	float: right;
+}
+.grid-col3 {
+	width: 190px;
+	height: 100%;
+}
+.grid-col2-t {
+	position: relative;
+}
+.arrow-l,
+.arrow-r {
+	height: 60px;
+	width: 30px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0,0,0,0.3);
+	line-height: 60px;
+	text-align: center;
+}
+.arrow-l a,
+.arrow-r a
+{
+	color: #fff;
+	font-size: 20px;
+	font-family: arial;
+}
+
+.arrow-l {
+	left: 0;
+}
+.circle {
+	height: 20px;
+	width: 182px;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	text-align: center;
+	line-height: 20px;
+}
+.circle a {
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 2px;
+}
+.circle .current {
+	background-color: #f10215;
+}
+.login {
+	height: 85px;
+	width: 100%;
+	background-color: #fff;
+	padding: 15px 0;
+}
+.login-t {
+	line-height: 20px;
+	height: 62px;
+	width: 95px;
+	padding-left: 72px;
+	font-size: 12px;
+	color: #666;
+	/*以下三行是使用省略号的*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: relative;
+}
+.login-t a {
+	color: #666;
+}
+.user-info {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	background: url(../images/sprite_userinfo@1x.png) no-repeat;
+	background-position: -70px 0;
+}
+.login-b {
+	text-align: center;
+}
+.login-b a {
+	display: inline-block;
+	height: 20px;
+	width: 70px;
+	text-align: center;
+	line-height: 20px;
+	color: #E01222;
+	border: 2px solid #E01222;
+	margin-bottom: 15px;
+	margin-left: 5px;
+}
+.login-b a:hover {
+	background-color: #E01222;
+	color: #fff;
+	
+}
+.user-info img {
+	width: 40px;
+	padding: 5px;
+	border-radius: 50%
+}
+.news {
+	height: 147px;
+	width: 164px;
+	border-bottom: 1px solid #E7E7E7;
+	border-top: 1px solid #E7E7E7;
+	background-color: #fff;
+	padding: 7px 13px 0;
+}
+.news-t {
+	height: 20px;
+	width: 162px;
+	border-bottom: 1px solid #E6E6E6;
+	text-align: center;
+}
+.news-t a {
+	display: inline-block;
+	line-height: 17px;
+	float: left;
+}
+.news-t a:hover {
+	border-bottom: 2px solid #DB192B;
+}
+.first {
+	width: 38px;
+	border-right: 1px solid #E6E6E6;
+}
+.last {
+	margin-left: 16px;
+}
+.news-t .more {
+	float: right;
+}
+.new-b ul {
+	margin: 15px 0 20px 16px;
+}
+.new-b ul li {
+	height: 24px;
+}
+
+.expand {
+	height: 209px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.expand ul {
+	width: 195px;
+}
+.expand ul li {
+	height: 69px;
+	width: 47px;
+	border-right: 1px solid #E7E7E7;
+	border-bottom: 1px solid #E7E7E7;
+	float: left;
+}
+.expand li a {
+	display: block;
+	text-align: center;
+	padding-top: 15px;
+}
+.expand li i {
+	display: block;
+	background: url(../images/sprite_fs@1x.png) no-repeat;
+	height: 21px;
+	width: 15px;
+	background-position: -5px -89px;
+	margin-left: 16px;
+	margin-bottom: 9px;
+}
