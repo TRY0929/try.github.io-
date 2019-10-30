@@ -1,6 +1,14 @@
 # depslib dependency file v1.0
-1572368253 source:c:\users\arashi\desktop\heap\definition.h
+1572394399 source:c:\users\arashi\desktop\heap\definition.h
 
-1514140574 source:c:\users\arashi\desktop\heap\main.cpp
+1572394712 source:c:\users\arashi\desktop\heap\main.cpp
 	<iostream>
+	"implement.h"
+
+1572394737 c:\users\arashi\desktop\heap\implement.h
+	<iostream>
+	<queue>
+	"definition.h"
+
+1572394399 c:\users\arashi\desktop\heap\definition.h
 
