@@ -1,0 +1,337 @@
+* {
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			list-style: none;
+		}
+		.clearfix::after, 
+		.clearfix::before {
+			display: table;
+			content: "";
+		}
+		.clearfix::after {
+			clear: both;
+		}
+		.clearfix {
+			*zoom: 1;
+		}
+		a {
+			font-size: 16px;
+			color: #050505;
+			text-decoration: none;
+		}
+		body {
+			background-color: #f3f5f7;
+			height: 5000px;
+		}
+		input {
+			border: 0;
+			box-sizing: border-box;
+		}
+		.container { /*版心都是1200宽 且居中对齐*/
+			width: 1200px;
+			margin: 0 auto;
+		}
+		/*css初始化结束*/
+
+		header {
+			height: 100px;
+			/*background-color: pink;*/
+			overflow: hidden;
+		}
+		/*导航栏开始*/
+		nav {
+			height: 41px;
+			width: 1366px;
+			margin: 26px auto;
+			/*background-color: hotpink;*/
+		}
+		.logo {
+			float: left;
+			background: url(images/sprite.png) no-repeat;
+			background-position: 0 0;
+			height: 41px;
+			width: 195px;
+		}
+		.navbar {
+			float: left;
+			height: 42px;
+			line-height: 42px;
+			margin-left: 50px;
+		}
+		.navbar li {
+			float: left;
+		}
+		.navbar li a {
+			padding: 0 14px;
+			display: block; /*给高需要转换为块级元素*/
+
+		}
+		.navbar li a:hover {
+			border-bottom: 2px solid #00a4ff;
+		}
+		/*导航栏结束*/
+		/*搜索框开始*/
+		.search {
+			width: 410px; /*360 50*/
+			height: 42px;
+			border: 1px solid #00a4ff;
+			float: right;
+		}
+		.search input[type=search] {
+			background-color: #f3f5f7;
+			width: 360px;
+			height: 42px;
+			padding-left: 18px;
+			float: left;
+		}
+		.search input[type=submit] {
+			float: left;
+			width: 50px;
+			height: 42px;
+			background-color: ;
+			background: #00a4ff url(images/search_09.png) center center no-repeat;
+		}
+		/*搜索框结束*/
+		/*个人中心开始*/
+		.personal {
+			float: right;
+			height: 42px;
+			line-height: 42px;
+			margin-left: 20px;
+		}
+		.personal a {
+			font-size: 14px;
+			color: #666;
+		}
+		.personal a img {
+			margin: 0 8px;
+			vertical-align: middle;
+		}
+		/*个人中心结束*/
+		/*banner开始*/
+		.banner {
+			height: 420px;
+			background-color: #1c036c;
+		}
+		.banner-in {
+			background: #1c036c url(images/bannerbg_07.png) center center no-repeat;
+			height: 420px;
+			position: relative;
+		}
+		.circle {
+			width: 180px;
+			height: 14px;
+			/*background-color: pink;*/
+			position: absolute;
+			/*父亲必须是相对位置 子绝父相*/
+			bottom: 16px;
+			left: 50%;
+			margin-left: -104px;
+		}
+		.circle li {
+			float: left;
+			margin: 0 6px;
+			height: 14px;
+			width: 14px;
+			margin: 0 6px;
+			border-radius: 50%;
+			background-color: rgba(255,255,255,0.3);
+		}
+		.circle .current { /*当前选中的样式*/
+			background-color: #fff;
+			height: 14px;
+			width: 20px;
+			border-radius: 6px;
+		}
+		/*左侧边栏开始*/
+		.slidebar {
+			float: left; 
+			height: 420px;
+			width: 190px;
+			background-color: rgba(0,0,0,0.3)
+		}
+		.slidebar li a {
+			color: #fff;
+			font-size: 14px;
+			padding: 0 20px;
+			display: block;
+			height: 45px;
+			line-height: 45px;
+		}
+		.slidebar li a span {
+			float: right;
+			font-family: arial;
+		}
+		.slidebar li a:hover {
+			color: #00b4ff;
+		}
+		/*左侧边栏结束*/
+		/*小课表开始*/
+		.timetable {
+			float: right;
+			height: 300px;
+			width: 228px;
+			margin-top: 50px;
+			background-color: #fff;
+		}
+		.timetable dt {
+			height: 50px;
+			line-height: 50px;
+			background-color: #9bceea;
+			font-size: 18px;
+			color: #fff;
+			text-align: center;
+			letter-spacing: 1px;
+			margin-bottom: 10px;
+		}
+		.timetable dd {
+			height: 46px;
+			width: 193px;
+			margin: 0 auto;
+			/*background-color: hotpink;*/
+			border-bottom: 1px solid #efefef;
+			padding-top: 12px;
+		}
+		.timetable dd h4 {
+			font-size: 16px;
+			font-weight: normal;
+			color: #5f5f5f;
+		}
+		.timetable dd p {
+			font-size: 14px;
+			color: #d8d8d8;
+		}
+		.timetable dd:last-child {
+			border: 0;
+		}
+		.timetable dd a {
+			height: 38px;
+			font-size: 16px;
+			font-weight: 550;
+			letter-spacing: 1px;
+			color: #00a4ff;
+			line-height: 40px;
+			text-align: center;
+			border: 1px solid #00a4ff;
+			display: block;
+			transition: all 0.5s;
+			/*添加这个效果 渐变了*/
+		}
+		.timetable dd a:hover {
+			background-color: #00a4ff;
+			color: #fff;
+		}
+		/*小课表结束*/
+		/*推荐栏开始*/
+		.recommend {
+			height: 60px;
+			line-height: 60px;
+			background-color: #fff;
+			margin-top: 8px;
+			box-shadow: 0 2px 2px rgba(0,0,0,0.2)
+		}
+		.recommend a {
+			padding: 0 30px;
+			font-size: 14px;
+			border-right: 1px solid #bfbfbf;
+		}
+		.recommend a:hover {
+			color: #00a4ff;
+		}
+		.recommend a:nth-last-child(2) {
+			border: 0;
+		}
+		.recommend a:last-child {
+			border: 0;
+			float: right;
+			color: #00a4ff;
+		}
+		.recom-products {
+			margin-top: 34px;
+		}
+		.recom-hd {
+			height: 40px;
+			/*background-color: pink;*/
+		}
+		.recom-products h4 {
+			font-size: 16px;
+			color: #494949;
+			font-weight: normal;
+			float: left;
+		}
+		.recom-products a {
+			float: right;
+			margin: 2px 30px 0 0;
+			font-size: 14px;
+			color: #a5a5a5;
+		}
+		.recom-hd a:hover {
+			color: #00a4ff;
+		}
+		/*推荐栏结束*/
+		/*精品推荐主体部分*/
+		/*这里bd没给高度 后面要清除浮动*/
+		.recom-bd ul li {
+			float: left;
+			margin-right: 15px;
+			margin-bottom: 15px;
+			height: 270px;
+			width: 228px;
+			background-color: #fff;
+			/*overflow: hidden;*/
+			/*box-shadow: 水平距离 垂直距离 模糊距离 阴影尺寸 颜色 内外*/
+			
+			-3px 4px 5px rgba(0,0,0,0.1);
+			position: relative;
+			transition: all 0.5s;
+		}
+		.recom-bd ul li:hover {
+			/*margin-bottom: 20px;*/
+			box-shadow: 3px 4px 5px rgba(0,0,0,0.2);
+		}
+		.hot {
+			height: 24px;
+			width: 40px;
+			position: absolute;
+			top: 5px;
+			right: -4px;
+			background-image: url(images/sprite.png);
+			background-position: 0 -79px;
+			
+		}
+		.over {
+			overflow: hidden;
+		}
+		.recom-bd ul li:nth-child(5n) {
+			margin-right: 0;
+		}
+		.recom-bd ul h4, 
+		.recom-bd ul p {
+			margin: 0 20px 10px 22px;
+		}
+		.recom-bd ul h4 {
+
+			font-weight: normal;
+			font-size: 14px;
+			color: #2b2b2b;
+			margin-top: 24px;
+			/*margin-bottom: 20px;*/
+		}
+		.recom-bd ul p {
+			/*background-color: #000;*/
+			color: #b8b8b8;
+			font-size: 12px;
+			height: 12px;
+		}
+		.recom-bd p span {
+			color: #ff9159;
+		}
+
+		/*页面底部*/
+		footer {
+			height: 272px;
+			background-color: #fff;
+		}
+		/*banner结束*/
