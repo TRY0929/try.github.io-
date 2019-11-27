@@ -1,0 +1,613 @@
+@font-face {
+     font-family: 'icomoon';
+     src:  url('../fonts/icomoon.eot?7kkyc2');
+     src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+       url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+       url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+       url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+     font-weight: normal;
+     font-style: normal;
+}
+.clearfix:before,.clearfix:after { 
+  content:"";
+  display:table;
+ }
+.clearfix:after {
+ clear:both;
+}
+.clearfix {
+  *zoom:1;
+}
+.w {
+	width: 1226px;
+	margin: 0 auto;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td 
+{margin:0; padding:0;}
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #FAFAFA;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	font-size: 12px;
+}
+i {
+	font-family: "icomoon";
+	font-style: normal;
+}
+/*头部导航栏开始*/
+nav {
+	height: 40px;
+	background-color: #333;
+	line-height: 40px;
+}
+nav li {
+	height: 40px;
+	float: left;
+	/*这是上面情况？？这里不加高度显示会导致下一行会受影响？？*/
+}
+nav a {
+	padding: 0 7px;
+	color: #b0b0b0;
+}
+nav a:hover {
+	color: #fff;
+}
+nav li span {
+	font-size: 12px;
+}
+input, button {
+	outline: none;
+	border: 0;
+}
+.nav-l {
+	float: left;
+}
+.nav-l li:first-child a {
+	padding-left: 0;
+}
+.nav-r {
+	float: right;
+}
+.nav-r li:last-child {
+	margin-left: 18px;
+	background-color: rgba(255,255,255,0.1);
+	width: 120px;
+	text-align: center;
+}
+.nav-r li:last-child i {
+	margin-right: 5px;
+}
+.nav-r li:last-child a:hover {
+	color: #ff6700;
+}
+/*头部导航栏结束*/
+/*头部热点词开始*/
+.hotwords {
+	margin-left: 244px;
+	height: 100px;
+	float: left;
+	/*background-color: pink;*/
+	width: 686px;
+}
+.hotwords ul {
+	line-height: 100px;
+	float: left;
+}
+.hotwords li {
+	float: left;
+	margin-right: 20px;
+}
+.hotwords li a {
+	
+	font-size: 16px;
+	color: #333;
+}
+.hotwords li a:hover {
+	color: #ff6700;
+}
+/*头部热点词结束*/
+/*头部搜索框开始*/
+.nav-t {
+	position: relative;
+	/*height: 100px;*/
+}
+.search {
+	float: right;
+	width: 296px;
+	height: 50px;
+	margin-top: 25px;
+}
+.search input {
+	display: block;
+	float: left;
+	width: 246px;
+	height: 50px;
+	border: 1px solid #e0e0e0;
+	padding-left: 6px;
+	transition: all 0.4s;
+}
+.search input:hover {
+	border: 1px solid #ff6700;
+}
+.search button {
+	display: block;
+	float: right;
+	height: 50px;
+	width: 50px;
+	border: 1px solid #e0e0e0;
+	line-height: 50px;
+	font-size: 18px;
+	transition: all 0.4s;
+}
+.search button:hover {
+	background-color: #ff6700;
+	color: #fff;
+}
+.logo {
+	background: #ff6700 url(../images/mi-logo.png) no-repeat center center;
+	height: 55px;
+	width: 55px;
+	position: absolute;
+	left: 0;
+	top: 22px;
+}
+/*头部搜索框结束*/
+/*banner开始*/
+.banner {
+	height: 460px;
+	background: url(../images/banner.jpg) center center;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	cursor: pointer;
+	position: relative;
+}
+/*banner左侧开始*/
+.banner-l {
+	width: 234px;
+	background-color: rgba(0,0,0,0.2);
+	height: 420px;
+	padding: 20px 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.focus {
+	overflow: hidden;
+	position: relative;
+	width: 1226px;
+	height: 460px;
+}
+.focus ul {
+	width: 600%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.focus ul li {
+	float: left;
+}
+.banner-l ul li {
+	line-height: 41px;
+	padding: 0 24px 0 29px;
+}
+.banner-l li a {
+	font-size: 14px;
+	color: #fff;
+}
+.banner-l li:hover {
+	background-color: #ff6700;
+}
+.banner-l li span {
+	float: right;
+}
+.slider-l, .slider-r {
+	background: url(../images/icon-slides.png);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 69px;
+	width: 41px;
+}
+.slider-l {
+	left: 234px;
+	background-position: -84px 0;
+}
+.slider-l:hover {
+	background-position: 0 0;
+}
+.slider-r {
+	right: 0;
+	background-position: -125px 0;
+}
+.slider-r:hover {
+	background-position: -42px 0;
+}
+.circle {
+	height: 20px;
+	width: 100px;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+.circle ul li {
+	float: left;
+	margin: 0 3px;
+	height: 6px;
+	width: 6px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	background-color: #999;
+}
+.select {
+	background-color: rgba(0,0,0,0);
+}
+/*banner左侧结束*/
+/*banner结束*/
+/*底部banner开始*/
+.banner-bottom {
+	height: 170px;
+	margin-top: 14px;
+}
+.func {
+	width: 234px;
+	height: 170px;
+	background-color: #5f5750;
+	float: left;
+}
+.func a {
+	float: left;
+	width: 78px;
+	height: 63px;
+	padding-top: 21px;
+	text-align: center;
+	color: #cfcdcb;
+	transition: all 0.3s;
+	position: relative;
+}
+.func a:hover {
+	color: #fff;
+}
+.func a:before {
+	position: absolute;
+	content: "";
+	width: 70px;
+	border-top: 1px solid #665e57;
+	left: 5px;
+	top: 2px;
+}
+.func a:after {
+	position: absolute;
+	content: "";
+	height: 70px;
+	border-right: 1px solid #665e57;
+	left: 2px;
+	top: 8px;
+}
+.box1, .box2, .box3 {
+	float: left;
+	margin-left: 14px;
+	
+}
+.box1 a,.box2 a, .box3 a {
+	height: 170px;
+	width: 316px;
+	display: block;
+	background: url(../images/banner-b1.jpg) no-repeat center center;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.box3 {
+	float: right;
+}
+/*底部banner结束*/
+/*右侧固定导航栏开始*/
+.right-nav {
+	position: fixed;
+	right: 0;
+	top: 44px;
+	width: 82px;
+	background-color: #fff;
+}
+.right-nav a {
+	display: block;
+	height: 55px;
+	width: 82px;
+	border: 1px solid #ccc;
+	text-align: center;
+	padding-top: 35px;
+	font-size: 14px;
+	color: #757575;
+	background: url(../images/phone1.png) no-repeat center 15px;
+	-webkit-background-size: 32px;
+	background-size: 32px;
+	transition: all 0.3s;
+}
+.right-nav a:hover {
+	background: url(../images/phone2.png) no-repeat center 15px;
+	-webkit-background-size: 32px;
+	background-size: 32px;
+	color: #ff6700;
+}
+/*右侧固定导航栏结束*/
+/*主体手机部分开始*/
+.phone {
+	height: 654px;
+	margin-top: 40px;
+}
+.phone-t {
+	height: 38px;
+}
+.phone h3 {
+	font-size: 22px;
+	font-weight: normal;
+	width: 50px;
+	float: left;
+}
+.phone-t a {
+	float: right;
+	font-size: 16px;
+	color: #424242;
+	padding-right: 25px;
+	position: relative;
+	transition: all 0.3s;
+}
+.phone-t a:hover {
+	color: #ff6700;
+}
+.phone-t a:after {
+	position: absolute;
+	font-weight: 700;
+	font-family: arial;
+	right: 0;
+	content: ">";
+	text-align: center;
+	color: #fff;
+	height: 22px;
+	line-height: 22px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #B0B0B0;
+}
+.phone-b {
+	height: 614px;
+}
+.phone-b a {
+	transition: all 0.3s;
+}
+.phone-b a:hover {
+	/*box-shadow:水平阴影 垂直阴影 模糊距离 阴影尺寸 阴影颜色  内/外阴影；*/
+	box-shadow: 0 15px 21px 10px rgba(0,0,0,0.05);
+	transform: translateY(-3px);
+}
+.kinds {
+	width: 992px;
+	height: 614px;
+}
+.kinds a {
+	float: left;
+	height: 98px;
+	width: 234px;
+	background-color: #fff;
+	margin-left: 14px;
+	padding-top: 202px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 14px;
+	transition: all 0.3s;
+}
+
+.kinds a img {
+	position: absolute;
+	top: 18px;
+	left: 32px;
+}
+.kinds h4 {
+	height: 22px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #333;
+}
+.kinds p {
+	font-size: 12px;
+	color: #B0B0B0;
+	height: 30px;
+}
+.kinds span {
+	color: #FF6700;
+	font-size: 14px;
+	text-align: center;
+}
+/*主体手机部分结束*/
+
+/*底部信息开始*/
+footer {
+	width: 100%;
+}
+.help {
+	margin-top: 26px;
+	height: 272px;
+	background-color: #fff;
+	width: 100%;
+}
+.info-t {
+	border-bottom: 1px solid #E0E0E0;
+	height: 79px;
+}
+.info-t a {
+	font-family: "icomoon";
+	font-size: 16px;
+	color: #616161;
+	width: 242px;
+	float: left;
+	padding: 25px 0;
+	text-align: center;
+	position: relative;
+}
+.info-t a:hover {
+	color: #ff6700;
+}
+.info-t a:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 27px;
+	height: 25px;
+	border-right: 1px solid #E0E0E0;
+}
+.info-t a:last-child:after {
+	content: "";
+	border: 0;
+}
+.info-t a:before {
+	content: "\e991";
+	font-size: 20px;
+}
+.info-b {
+	padding-top: 42px;
+}
+.info-b dl {
+	height: 114px;
+	width: 160px;
+	float: left;
+}
+.info-b dl dt {
+	height: 44px;
+	font-size: 14px;
+}
+.info-b dl dd {
+	line-height: 28px;
+}
+.info-b dd a {
+	color: #757575;
+}
+.info-b dd a:hover {
+	color: #ff6700;
+}
+.tele {
+	float: right;
+	width: 252px;
+	text-align: center;
+}
+.tele h3 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #FF6A00;
+	margin-bottom: 3px;
+}
+.tele p {
+	font-size: 12px;
+	color: #757575;
+	height: 50px;
+}
+.tele a {
+	margin: 0 auto;
+	display: inline-block;
+	width: 118px;
+	border: 1px solid #FF6A00;
+	height: 28px;
+	line-height: 28px;
+	color: #FF6A00;
+	transition: all 0.4s;
+}
+.tele a:hover {
+	background-color: #FF6A00;
+	color: #fff;
+	vertical-align:top;
+}
+/*底部信息结束*/
+/*底部版权信息开始*/
+.copyright {
+	margin-top: 32px;
+	padding-left: 66px;
+	height: 180px;
+	position: relative;
+	box-sizing: border-box;
+}
+.copyright .logo {
+	top: 0;
+	left: 0;
+	margin-right: 5px;
+}
+.infolink {
+	width: 1122px;
+	height: 38px;
+}
+.infolink a {
+	display: block;
+	float: left;
+	padding: 0 4px;
+	text-align: center;
+	border-right: 1px solid #E0E0E0;
+	color: #757575;
+	word-break: keep-all;
+}
+.infolink a:hover {
+	color: #ff6700;
+}
+.infolink a:last-child {
+	border: 0;
+}
+.info p, .info p a {
+	font-size: 12px;
+	color: #B0B0B0;
+}
+.info p a:hover {
+	color: #ff6700;
+}
+.bottom-i {
+	margin-top: 8px;
+}
+.bottom-i a {
+	display: inline-block;
+	margin-left: 2px;
+	float: left;
+	height: 28px;
+	width: 83px;
+	background: url(../images/truste.png) no-repeat center center;
+	-webkit-background-size: 83px;
+	background-size: 83px;
+}
+.bottom-i a:nth-child(2) {
+	background: url(../images/v-logo-2.png) no-repeat center center;
+	-webkit-background-size: 83px;
+	background-size: 83px;
+}
+.bottom-i a:nth-child(3) {
+	background: url(../images/v-logo-1.png) no-repeat center center;
+	-webkit-background-size: 83px;
+	background-size: 83px;
+}
+.bottom-i a:nth-child(4) {
+	background: url(../images/v-logo-3.png) no-repeat center center;
+	-webkit-background-size: 83px;
+	background-size: 83px;
+}
+.bottom-i a:nth-child(5) {
+	background: url(../images/v-logo-4.png) no-repeat center center;
+	-webkit-background-size: 83px;
+	background-size: 83px;
+}
+/*底部版权信息结束*/
+.slogan {
+	height: 50px;
+	padding: 15px 0;
+	margin: 0 auto;
+	text-align: center;
+}
