@@ -7,6 +7,7 @@ window.addEventListener("load", function(){
 	var cirul = circle.querySelector("ul");
 	var focul = focus.querySelector("ul");
 	var num=0, cur=0;
+	var flag = true;
 	//获得总共有的焦点图个数
 	var len = focul.children.length;
 	var imgWidth = focul.children[0].offsetWidth;
@@ -36,35 +37,42 @@ window.addEventListener("load", function(){
 	focul.appendChild(focul.children[0].cloneNode(true));
 	sliderR.addEventListener("click", function(event) {
 		//若到了最后一张图(实际上是到达了虚拟的第一张图)
-		if(num == len) {
-			num = 0;
-			//迅速跳回第一张
-			focul.style.left = '0px';
+		if(flag) { //flag 节流阀功能 防止用户点击过快导致图片切换速度过快 视觉体验不好
+			flag = false;
+			if(num == len) {
+				num = 0;
+				//迅速跳回第一张
+				focul.style.left = '0px';
+			}
+			++num;
+			++cur;
+			if(cur == len) {cur = 0;}
+			animate(focul, -num*imgWidth, function(){flag=true;});
+			for(let j=0;j<len;++j) { //排他思想
+				cirul.children[j].style.backgroundColor = "#999";
+			}
+			cirul.children[cur].style.backgroundColor = "rgba(0,0,0,0)";
 		}
-		++num;
-		++cur;
-		if(cur == len) {cur = 0;}
-		animate(focul, -num*imgWidth);
-		for(let j=0;j<len;++j) { //排他思想
-			cirul.children[j].style.backgroundColor = "#999";
-		}
-		cirul.children[cur].style.backgroundColor = "rgba(0,0,0,0)";
 	})
 	sliderL.addEventListener("click", function(event) {
-		if(num == 0) {
-			num = len;
-			focul.style.left = -len*imgWidth+'px';
+		if(flag) {
+			flag = false;
+			if(num == 0) {
+				num = len;
+				focul.style.left = -len*imgWidth+'px';
+			}
+			--num;
+			if(cur == 0) {
+				cur = len;
+			}
+			--cur;
+			animate(focul, -num*imgWidth, function(){flag = true;});
+			for(let j=0;j<len;++j) {
+				cirul.children[j].style.backgroundColor = "#999";
+			}
+			cirul.children[cur].style.backgroundColor = "rgba(0,0,0,0)";	
 		}
-		--num;
-		if(cur == 0) {
-			cur = len;
-		}
-		--cur;
-		animate(focul, -num*imgWidth);
-		for(let j=0;j<len;++j) {
-			cirul.children[j].style.backgroundColor = "#999";
-		}
-		cirul.children[cur].style.backgroundColor = "rgba(0,0,0,0)";
+		
 	})
 	//设置定时器 每三秒自动换图片
 	var timer = setInterval(function() {
