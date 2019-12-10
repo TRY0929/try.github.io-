@@ -1,0 +1,540 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, input, lengend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(0,0,0,0.5);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.head {
+    height: 80px;
+    width: 100%;
+    /*background-color: pink;*/
+    overflow: hidden;
+    position: relative;
+}
+.head .logo {
+    position: absolute;
+    opacity: .5;
+    left: 20px;
+    top: 20px;
+}
+.head .logo:hover {
+    opacity: 1;
+}
+.login {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+}
+.login div {
+    float: left;
+}
+.login p {
+    float: left;
+    color: #fff;
+    margin-right: 10px;
+    line-height: 28px;
+}
+.download {
+
+    width: 126px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 17px;
+    box-sizing: border-box;
+    border-radius: 28px;
+    background-color: #2caf6f;
+    margin-right: 20px;
+}
+.download a {
+    color: #fff;
+}
+.download span {
+    vertical-align: -2px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background: url("../images/icon_sprite.png") no-repeat -160px -320px;
+}
+.user {
+    line-height: 28px;
+    vertical-align: middle;
+}
+.user-info {
+    margin-right: 20px;
+}
+.user .user-info img {
+    position: absolute;
+    left: 0;
+    top: -4px;
+    height: 30px;
+    border-radius: 50%;
+}
+.user a {
+    color: #fff;
+    opacity: .5;
+}
+.user a:hover {
+    opacity: 1;
+}
+.user-info a {
+    padding-left: 36px;
+    position: relative;
+}
+.log-out {
+    margin-left: 15px;
+    visibility: hidden;
+}
+.main-music {
+    height: 510px;
+    width: 100%;
+    user-select: none;
+    /*background-color: palegreen;*/
+}
+.music-list {
+    position: relative;
+    width: 860px;
+    height: 100%;
+    margin-left: 118px;
+    /*background-color: rgba(121,133,122,.7);*/
+}
+.music-handler {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.music-handler li {
+    height: 38px;
+    width: 120px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    opacity: .6;
+    margin-right: 6px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+}
+.music-handler li:hover {
+    opacity: 1;
+}
+.music-handler li i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/icon_sprite.png") no-repeat -60px -20px;
+    vertical-align: -4px;
+    margin-right: 4px;
+}
+.music-info {
+    width: 100%;
+    height: 452px;
+    cursor: default;
+    user-select: none;
+    overflow: auto;
+}
+.music-info ul li {
+    font-size: 14px;
+    padding: 16px 0;
+    width: 860px;
+    height: 52px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    box-sizing: border-box;
+    color: rgba(225,225,225,.8);
+    position: relative;
+}
+.music-info ul li:first-child {
+    user-select: all;
+}
+.li-in {
+    height: 16px;
+    width: 100%;
+    position: relative;
+}
+.checkbox {
+    opacity: .5;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #fff;
+    float: left;
+}
+.checkbox input {
+    display: block;
+    height: 14px;
+    width: 14px;
+    opacity: 0;
+}
+.check-now {
+    background: url("../images/icon_sprite.png") no-repeat -60px -80px;
+    opacity: 1;
+}
+.music-name {
+    margin-left: 28px;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+}
+.music-name span {
+    margin-right: 8px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+.index-play {
+    background: url("../images/wave.gif") no-repeat center center;
+    color: transparent;
+}
+.singer {
+    float: right;
+    width: 216px;
+    height: 16px;
+    line-height: 16px;
+}
+.time {
+    float: right;
+    width: 88px;
+    height: 16px;
+    line-height: 16px;
+}
+.li-selection {
+    position: absolute;
+    padding-top: 4px;
+    padding-left: 262px;
+    right: 0;
+    top: 0;
+    width: 760px;
+    height: 38px;
+    box-sizing: border-box;
+    display: none;
+}
+.li-selection a {
+    margin-right: 8px;
+    margin-top: 4px;
+    opacity: .5;
+    display: block;
+    float: left;
+    height: 36px;
+    width: 36px;
+}
+.li-selection a:hover {
+    opacity: 1;
+}
+.play {
+    background: url("../images/icon_list_menu.png") no-repeat -120px 0px;
+}
+.play2 {
+    background-position: -120px -200px;
+}
+.add {
+    background: url("../images/icon_list_menu.png") no-repeat -120px -80px;
+}
+.down {
+    background: url("../images/icon_list_menu.png") no-repeat -120px -120px;
+}
+.share {
+    background: url("../images/icon_list_menu.png") no-repeat -120px -40px;
+}
+.li-selection .del {
+    margin-right : 2px;
+    background: url("../images/icon_list_menu.png") no-repeat -120px -160px;
+    position: absolute;
+    right: 52px;
+}
+.singer-info {
+    position: absolute;
+    right: -540px;
+    top: 0;
+    height: 510px;
+    width: 546px;
+}
+.album {
+    margin-left: 178px;
+    height: 334px;
+    width: 186px;
+}
+.album-cover {
+    height: 186px;
+    width: 186px;
+}
+.album-cover a {
+    position: relative;
+}
+.album-cover a:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -170px;
+    height: 180px;
+    width: 201px;
+    background: url("../images/album_cover_player.png") no-repeat 0 0;
+    background-size: 100%;
+    z-index: 2;
+}
+.album-info {
+    margin-top: 20px;
+    margin-left: -77px;
+    width: 340px;
+    height: 84px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(225,225,225,.8);
+}
+.album-info a {
+    color: rgba(225,225,225,.8);
+}
+.album-info a:hover {
+    color: rgb(225,225,225);
+}
+.album-info div {
+    height: 28px;
+}
+.lyric {
+    height: 102px;
+    margin-left: 101px;
+    /*width: 186px;*/
+    font-size: 14px;
+    color: rgba(255,255,255,.5);
+    overflow-y: hidden;
+}
+.lyric ul {
+    width: 340px;
+}
+ li {
+    width: 340px;
+    line-height: 34px;
+    list-style: none;
+    text-align: center;
+}
+.lyric .lyric-cur {
+    color: #31c27c;
+}
+.footer {
+    height: 131px;
+    padding-top: 46px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.footer-in {
+    user-select: none;
+    width: 1300px;
+    height: 36px;
+    margin-left: 118px;
+    /*background-color: rgba(240,0,12,.1);*/
+}
+.footer-in a {
+    display: block;
+    float: left;
+    color: rgba(255,255,255,.8);
+    opacity: .8;
+}
+.footer-in a:hover {
+    opacity: 1;
+}
+.player {
+    height: 36px;
+    width: 152px;
+    /*background-color: pink;*/
+    float: left;
+}
+.last, .next {
+    margin-top: 6px;
+    height: 20px;
+    width: 20px;
+    background: url("../images/player.png") no-repeat 0 -30px;
+}
+.next {
+    background: url("../images/player.png") no-repeat 0 -52px;
+}
+.playing {
+    margin: 2px 40px 0 46px;
+    height: 29px;
+    width: 26px;
+    background: url("../images/player.png") no-repeat 0 0;
+}
+.playing-now {
+    background: url("../images/player.png") no-repeat -26px 0;
+}
+.cur-play {
+    width: 690px;
+    height: 36px;
+    margin-left: 51px;
+    float: left;
+}
+.play-t {
+    margin-left: 6px;
+    height: 24px;
+    width: 646px;
+    font-size: 14px;
+}
+.play-t span {
+    float: left;
+    margin: 0 4px;
+    color: rgba(255,255,255,.8);
+}
+.play-t .now-time {
+    float: right;
+}
+.play-b {
+    position: relative;
+    height: 12px;
+    width: 646px;
+    /*background-color: rgba(255,255,2,.2);*/
+}
+.progress-bar {
+    position: absolute;
+    top: 4px;
+    height: 4px;
+    width: 646px;
+    background-color: rgba(255,255,255,.5);
+}
+.progress-line {
+    position: absolute;
+    top: 4px;
+    height: 4px;
+    width: 0;
+    background-color: #fff;
+}
+.progress-dot {
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.mode {
+    padding-top: 6px;
+    width: 294px;
+    height: 36px;
+    /*background-color: palegoldenrod;*/
+    float: left;
+    box-sizing: border-box;
+}
+.loop {
+    height: 20px;
+    width: 26px;
+    background: url("../images/player.png") no-repeat 0 -74px;
+    margin-right: 24px;
+}
+.loop1 {
+    background-position: 0 -260px;
+}
+.loop2 {
+    height: 24px;
+    background-position: 0 -205px;
+}
+.loop3 {
+    height: 24px;
+    background-position: 0 -232px;
+}
+.like {
+    height: 21px;
+    width: 23px;
+    background: url("../images/player.png") no-repeat 0 -96px;
+    margin-right: 24px;
+}
+.liked {
+    background-position: -30px -96px;
+}
+.downl {
+    height: 21px;
+    width: 21px;
+    background: url("../images/player.png") no-repeat 0 -120px;
+    margin-right: 24px;
+}
+.comments {
+    height: 24px;
+    width: 23px;
+    background: url("../images/player.png") no-repeat 0 -430px;
+    margin-right: 24px;
+}
+.only {
+    height: 26px;
+    width: 74px;
+    background: url("../images/player.png") no-repeat 0 -282px;
+}
+.only2 {
+    background-position: 0 -311px;
+}
+.volume {
+    padding-top: 6px;
+    width: 110px;
+    height: 30px;
+    float: left;
+    /*background-color: skyblue;*/
+}
+.v-img {
+    float: left;
+    height: 20px;
+    width: 24px;
+}
+.v-img a {
+    height: 20px;
+    width: 24px;
+    background: url("../images/player.png") no-repeat 0 -144px;
+}
+.v-img .no-play {
+    height: 20px;
+    width: 26px;
+    background: url("../images/player.png") no-repeat 0 -182px;
+}
+.v-progress {
+    position: relative;
+    height: 12px;
+    width: 80px;
+    float: right;
+    margin-top: 10px;
+}
+.v-progress-bar {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255,255,255,.5);
+    left: 0;
+    top: -1px;
+}
+.v-progress-line {
+    position: absolute;
+    width: 20%;
+    height: 4px;
+    background-color: #fff;
+    left: 0;
+    top: -1px;
+}
+.v-progress-dot {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -5px;
+    left: 20%;
+}
+.mask-bg, .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.mask-bg {
+    background: url("../images/singger.jpg") no-repeat 0 0;
+    background-size: cover;
+    filter: blur(100px);
+    z-index: -2;
+}
+.mask {
+    z-index: -1;
+    background-color: rgba(0,0,0,0.35);
+}
