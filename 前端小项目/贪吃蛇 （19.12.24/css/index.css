@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    border: 5px solid cornflowerblue;
+    padding: 50px 50px;
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+.page {
+    /*box-sizing: border-box;*/
+    height: 500px;
+    width: 800px;
+    /*margin: 100px auto;*/
+    border: 3px solid plum;
+    position: absolute;
+}
+
+.game-box {
+    display: none;
+}
+.snake {
+    height: 18px;
+    width: 18px;
+    background-color: #333;
+    border: 1px solid palegreen;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.snake-tail {}
+.snake-head-p {
+    top: 40px;
+}
+.snake-head {}
+.snake-tail-p {
+    top: 0;
+}
+.food {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background: #333 url("../images/food1.jpg");
+    background-size: cover;
+}
+.start-page, .end-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.1);
+}
+.start-page h1, .end-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+    margin-top: 150px;
+    font-size: 40px;
+}
+.end-btn {
+    font-size: 32px;
+    margin-top: -50px;
+}
+.start-btn, .score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+    bottom: 150px;
+    font-size: 22px;
+
+}
+.start-btn, .end-btn {
+    cursor: pointer;
+}
+.end-page {
+    display: none;
+}
+.game-box .error {
+    background-color: red;
+}
+.rule {
+    position: absolute;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .4;
+    z-index: -1;
+    background: #000 url("../images/bg.jpeg") no-repeat center center;
+    background-size: cover;
+}
