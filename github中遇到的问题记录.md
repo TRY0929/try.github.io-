@@ -85,3 +85,7 @@
 3. 按键盘左上角"Esc"
 
 4. 输入":wq",注意是冒号+wq,按回车键即可
+
+### host文件
+
+在C:\Windows\System32\drivers\etc路径下找到hosts文件，win10一般没有权限，要点击上面的 文件->打开window-powershell->以管理员身份打开，输入notepad hosts即可。
