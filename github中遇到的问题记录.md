@@ -79,12 +79,28 @@
 **解决方法**：
 
 1. 按键盘字母 i 进入insert模式
-
 2. 修改最上面那行黄色合并信息,可以不修改
-
 3. 按键盘左上角"Esc"
-
 4. 输入":wq",注意是冒号+wq,按回车键即可
+
+-----
+
+#### GitHub分支
+
+##### 1）创建分支
+
++ 先在GitHub网站上新建分支(branch)；
++ 在本地git，输入`git pull`，将新创建的分支拉到本地；
++ 再输入 `git checkout 分支名`来切换当前工作环境到分支底下， 和 `git status ` 来检查当前工作环境是否正确；
++ 在分支上写完代码、测试完正确性之后需要提交到远程仓库且合并到分支；
++ 和之前一样`git add .` `git commit -m '信息'` `git push`，这三条之后就将分支内容提交上去了，但是这是还没有和master合并；
++ 合并，`git checkout master`切换到master分支之下，` git merge origin/分支名`将分支于master合并，最后`git push`提交主分支。
+
+##### 2）删除分支
+
++ 查看分支： `git branch -a`
++ 删除本地分支：`git branch -d branch-name` （-D 强制删除）
++ 删除远程分支：` git branch -r -d origin/branch-name`
 
 ### host文件
 
